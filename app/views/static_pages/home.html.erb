@@ -1,0 +1,9 @@
+
+<% if user_signed_in? %>
+    <%= link_to "sign out", destroy_user_session_path, method: :delete %>
+    dit me anh Quang
+<% else %>
+    <%= link_to "Login", new_user_session_path %>
+    du ma
+<% end %>
+<%= yield %>
